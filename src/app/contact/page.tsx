@@ -1,6 +1,12 @@
+import { Metadata } from "next";
+
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 import classes from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
 
 export default function Contact() {
   async function Send() {

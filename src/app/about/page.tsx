@@ -1,8 +1,13 @@
+import { Metadata } from "next";
 import Image from "next/image";
 
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 import classes from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "About",
+};
 
 export default function About() {
   return (

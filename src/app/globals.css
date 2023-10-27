@@ -29,6 +29,7 @@ main {
   padding-top: 5em;
 
   color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
 
   display: flex;
   flex-flow: column;
