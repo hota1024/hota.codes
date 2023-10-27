@@ -1,0 +1,90 @@
+.main {
+  position: relative;
+
+  min-height: 100dvh;
+
+  padding: 4em;
+  padding-top: 5em;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  display: flex;
+  flex-flow: column;
+  gap: 4em;
+}
+
+.nameContainer {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+
+.name {
+  font-size: 2.8em;
+}
+
+.pronoun {
+  font-size: 1em;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.basic {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5em;
+  line-height: 1.4em;
+}
+
+.navList {
+  display: flex;
+  flex-flow: column;
+  gap: 1em;
+}
+
+.navList li {
+  list-style: none;
+}
+
+.navList li a {
+  position: relative;
+
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.navList li a::before {
+  position: absolute;
+  content: " ";
+
+  top: 70%;
+  bottom: 2px;
+  left: 0;
+  right: 100%;
+  border-radius: 999px;
+
+  background: blue;
+  transition: all 120ms ease-in-out;
+  z-index: -1;
+}
+
+/* .navList li a:hover {
+} */
+
+.navList li a:hover::before {
+  right: 0;
+}
+
+.actions {
+  position: absolute;
+  right: 4em;
+  bottom: 4em;
+
+  display: flex;
+  gap: 1.5em;
+}

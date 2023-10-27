@@ -1,10 +1,11 @@
-import "@radix-ui/themes/styles.css";
+import "./globals.css";
 
-import { Theme } from "@radix-ui/themes";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import { GradationBackground } from "@/components/GradationBackground";
+
+const josefinSans = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,9 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Theme>{children}</Theme>
-      </body>
+      <head></head>
+      <body className={josefinSans.className}>{children}</body>
     </html>
   );
 }

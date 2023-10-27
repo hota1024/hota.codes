@@ -1,0 +1,17 @@
+.container {
+  position: absolute;
+  z-index: -1;
+
+  inset: 2em;
+
+  background: rgb(15, 28, 93);
+
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.canvas {
+  display: block;
+
+  border-radius: 16px;
+}

@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@radix-ui/themes": "^2.0.0",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18"
@@ -21,6 +20,9 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "glslify-loader": "^2.0.0",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.69.5",
     "typescript": "^5"
   }
 }
