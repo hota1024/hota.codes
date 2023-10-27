@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 import classes from "./styles.module.css";
 
@@ -50,7 +50,7 @@ export function LoadingScreen() {
       await containerAnim.finished;
 
       el.style.pointerEvents = "none";
-    }, 500);
+    }, 1000);
   }, []);
 
   return (
