@@ -1,18 +1,3 @@
-.main {
-  position: relative;
-
-  min-height: 100dvh;
-
-  padding: 4em;
-  padding-top: 5em;
-
-  color: rgba(255, 255, 255, 0.75);
-
-  display: flex;
-  flex-flow: column;
-  gap: 4em;
-}
-
 .nameContainer {
   display: flex;
   flex-flow: column;
@@ -20,7 +5,13 @@
 }
 
 .name {
-  font-size: 2.8em;
+  font-size: 2em;
+}
+
+@media screen and (min-width: 500px) {
+  .name {
+    font-size: 3rem;
+  }
 }
 
 .pronoun {
@@ -46,38 +37,6 @@
 
 .navList li {
   list-style: none;
-}
-
-.navList li a {
-  position: relative;
-
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: bold;
-
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-}
-
-.navList li a::before {
-  position: absolute;
-  content: " ";
-
-  top: 70%;
-  bottom: 2px;
-  left: 0;
-  right: 100%;
-  border-radius: 999px;
-
-  background: blue;
-  transition: all 120ms ease-in-out;
-  z-index: -1;
-}
-
-/* .navList li a:hover {
-} */
-
-.navList li a:hover::before {
-  right: 0;
 }
 
 .actions {

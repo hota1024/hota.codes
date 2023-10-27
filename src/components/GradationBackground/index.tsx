@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-import { remToPx } from "@/utils";
+import { emToPx } from "@/utils";
 
 import fragmentSource from "./fragment.glsl";
 import classes from "./styles.module.css";
@@ -87,6 +87,12 @@ export function GradationBackground() {
         return;
       }
 
+      const padding = emToPx(2, canvas);
+
+      canvas.width = window.innerWidth - padding;
+      canvas.height =
+        document.scrollingElement?.scrollHeight ?? window.innerHeight - padding;
+
       const time = (Date.now() - startTime) * 0.001;
       gl.viewport(0, 0, canvas.width, canvas.height);
       gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
@@ -109,24 +115,6 @@ export function GradationBackground() {
     }
 
     render();
-
-    function updateSize() {
-      if (!canvas) {
-        return;
-      }
-
-      const padding = remToPx(2);
-
-      canvas.width = window.innerWidth - padding;
-      canvas.height = window.innerHeight - padding;
-      // canvas.width = window.innerWidth;
-      // canvas.height = window.innerHeight;
-    }
-
-    window.addEventListener("resize", updateSize);
-    updateSize();
-
-    return () => window.removeEventListener("resize", updateSize);
   }, [ref]);
 
   return (

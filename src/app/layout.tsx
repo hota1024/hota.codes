@@ -1,11 +1,22 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Josefin_Sans } from "next/font/google";
+import { Josefin_Sans, Noto_Sans_JP } from "next/font/google";
 
 import { GradationBackground } from "@/components/GradationBackground";
+import { LoadingScreen } from "@/components/LoadingScreen";
 
-const josefinSans = Josefin_Sans({ subsets: ["latin"] });
+const josefinSans = Josefin_Sans({
+  subsets: ["latin"],
+  variable: "--font-josefin-sans",
+  display: "swap",
+});
+
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  variable: "--font-noto-sans-jp",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className={josefinSans.className}>{children}</body>
+      <body className={`${josefinSans.variable} ${notoSansJP.variable}`}>
+        <LoadingScreen />
+        <GradationBackground />
+
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

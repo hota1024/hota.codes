@@ -1,0 +1,28 @@
+.container {
+  position: absolute;
+  inset: 0;
+  z-index: 999;
+
+  background: #0c013f;
+
+  display: grid;
+  place-items: center;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.version {
+  color: rgba(255, 255, 255, 0.7);
+}
