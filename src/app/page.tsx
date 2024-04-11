@@ -17,7 +17,7 @@ export default function Home() {
           <span className={classes.ib}>
             Faculty of Environment and Information Studies.
           </span>{" "}
-          <span className={classes.ib}>B2.</span>
+          <span className={classes.ib}>B3.</span>
         </div>
         <div>SFC RG Arch</div>
         <div>Shizuoka Junior Procon panel of judges.</div>
