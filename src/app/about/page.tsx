@@ -25,7 +25,7 @@ export default function About() {
             <a href="#about"># About</a>
           </h1>
           <p>
-            My name is Hotaka Okumoto(a.k.a ほた/hota1024),
+            My name is Hotaka Okumoto(ほた/hota1024),
             <br /> born in 2003 in Shizuoka, Japan.
           </p>
           <p>
