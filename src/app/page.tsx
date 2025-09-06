@@ -11,13 +11,13 @@ export default function Home() {
         <div className={classes.pronoun}>Programmer / Interested in Design</div>
       </div>
       <div className={classes.basic}>
-        <div>a.k.a ほた / hota1024</div>
+        <div>ほた / hota1024</div>
         <div>
           <span className={classes.ib}>Keio Univ.</span>{" "}
           <span className={classes.ib}>
             Faculty of Environment and Information Studies.
           </span>{" "}
-          <span className={classes.ib}>B3.</span>
+          <span className={classes.ib}>B4.</span>
         </div>
         <div>SFC RG Arch</div>
         <div>Shizuoka Junior Procon panel of judges.</div>
